@@ -2,7 +2,7 @@ baseURL = "http://familypay.onrender.com/"
 languageCode = "en-us"
 title = "Familypay"
 theme = "hugo-universal"
-themesDir = "../.."
+themesDir = "/themes"
 # Site language. Available translations in the theme's `/i18n` directory.
 defaultContentLanguage = "en"
 # Enable comments by entering your Disqus shortname
