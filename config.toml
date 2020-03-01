@@ -107,7 +107,7 @@ paginate = 10
     # Format dates with Go's time formatting
     date_format = "January 2, 2006"
 
-    logo = "img/familypay45.png"
+    logo = "img/familypay45t.png"
     logo_small = "img/familypay45.png"
     address = """<p class="text-uppercase"><strong>FamilyPay AB</strong>
         <br>13/25 New Avenue
