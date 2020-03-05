@@ -98,8 +98,8 @@ paginate = 10
     # - you're done. Happy mailing!
     #
     # Enable the contact form by entering your Formspree.io email
-    email = "your@email.com"
-    contact_form_ajax = false
+    email = "ulf.e.sv@gmail.com"
+    contact_form_ajax = true
 
     about_us = "<p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p>"
     copyright = "Copyright (c) 2015 - 2016, YourCompany; all rights reserved."
