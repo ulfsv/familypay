@@ -1,7 +1,6 @@
 <!DOCTYPE html>
-//<html lang="{{ .Site.LanguageCode }}">
-{{ define "main" }}
-{{ $data := index .Site.Data .Site.Language.Lang }}
+<html lang="{{ .Site.LanguageCode }}">
+
   {{ partial "head.html" . }}
 
   <body>
@@ -9,30 +8,30 @@
     <div id="all">
 
         <header>
-          {{ if $data.homepage.top.enable }}
+
           {{ partial "top.html" . }}
-          {{ if $data.homepage.nav.enable }}
+
           {{ partial "nav.html" . }}
 
         </header>
-        {{ if $data.homepage.carousel.enable }}
+
         {{ partial "carousel.html" . }}
-        {{ if $data.homepage.features.enable }}
+
         {{ partial "features.html" . }}
-        {{ if $data.homepage.testimonials.enable }}
+
         {{ partial "testimonials.html" . }}
-        {{ if $data.homepage.see_more.enable }}
+
         {{ partial "see_more.html" . }}
-        {{ if $data.homepage.recent_posts.enable }}
+
         {{ partial "recent_posts.html" . }}
-        {{ if $data.homepage.clients.enable }}
+
         {{ partial "clients.html" . }}
-        {{ if $data.homepage.footer.enable }}
+
         {{ partial "footer.html" . }}
 
     </div>
     <!-- /#all -->
-    {{ if $data.homepage.scripts.enable }}
+
     {{ partial "scripts.html" . }}
 
   </body>
