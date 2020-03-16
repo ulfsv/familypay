@@ -39,7 +39,7 @@ weight = 2
 [[menu.main]]
     identifier="home"
     name = "Home"
-    url  = "/"
+    #url  = "/"
     weight = 1
 
 [[menu.main]]
