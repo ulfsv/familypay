@@ -1,7 +1,7 @@
 baseURL = "http://familypay.onrender.com/"
 #disableLanguages = []
 defaultContentLanguageInSubdir = true
-languageCode = "en-us"
+#languageCode = "en-us"
 title = "Familypay"
 theme = "hugo-universal"
 #themesDir = "/themes"
@@ -27,7 +27,7 @@ weight = 1
 contentDir = "content/sv"
 
 home = "Hem"
-languageCode = "sv-SE"
+languageCode = "sv-se"
 languageName = "Sv"
 weight = 2
 
