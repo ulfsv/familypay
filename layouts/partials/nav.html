@@ -27,17 +27,17 @@
                   <li class="dropdown{{ if eq $current.RelPermalink .URL | or (eq $current.Type $topLevel) | or (and (eq (default (trim .URL "/") .Identifier) "blog") (in (slice "taxonomy" "taxonomyTerm") $current.Kind)) }} active{{ end }}">
                     {{ if .HasChildren }}
                       <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">{{ .Name }} <span class="caret"></span></a>
-                    <ul class="dropdown-menu">
+                     <ul class="dropdown-menu">
                       {{ range .Children }}
-                        <li><a href="{{ .URL }}">{{ .Name }}</a></li>
+                        <li><a href="{{ .URL | absLangURL }}">{{ .Name }}</a></li>
                       {{ end }}
                     </ul>
                     {{ else }}
-                    <a href="{{ .URL }}">{{ .Name }}</a>
+                    <a href="{{ .URL | absLangURL }}">{{ .Name }}</a>
                     {{ end  }}
                   </li>
                   {{ end }}
-                  {{ partial "langswitcher.html" . }}  
+                  {{ partial "langswitcher.html" . }}
                 </ul>
             </div>
             <!--/.nav-collapse -->
