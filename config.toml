@@ -1,4 +1,4 @@
-baseURL = "http://familypay.onrender.com/"
+baseURL = "https://familypay.onrender.com/"
 #disableLanguages = []
 defaultContentLanguageInSubdir = true
 #languageCode = "en-us"
@@ -71,13 +71,13 @@ weight = 2
 [[menu.topbar]]
     weight = 2
     name = "Facebook"
-    url = "http://facebook.com"
+    url = "https://facebook.com"
     pre = "<i class='fab fa-2x fa-facebook'></i>"
 
 [[menu.topbar]]
     weight = 3
     name = "Twitter"
-    url = "http://twitter.com"
+    url = "https://twitter.com"
     pre = "<i class='fab fa-2x fa-twitter'></i>"
 
 [[menu.topbar]]
