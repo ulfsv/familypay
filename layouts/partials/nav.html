@@ -28,41 +28,18 @@
                       <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">{{ .Name }} <span class="caret"></span></a>
                     <ul class="dropdown-menu">
                       {{ range .Children }}
-                       <!-- <li><a href="{{ .URL }}">{{ .Name }}</a></li> -->
-                        <li><a href="{{ .URL | relLangURL }}">{{ .Name }}</a></li>
+                       <li><a href="{{ .URL }}">{{ .Name }}</a></li> 
+                       <!--  <li><a href="{{ .URL | relLangURL }}">{{ .Name }}</a></li> -->
                       {{ end }}
                     </ul>
                     {{ else }}
-                    <li><a href="{{ .URL | relLangURL }}">{{ .Name }}</a></li>
+                      <li><a href="{{ .URL }}">{{ .Name }}</a></li>
+                    <!--  <li><a href="{{ .URL | relLangURL }}">{{ .Name }}</a></li> --
                     {{ end  }}
                   </li>
                   {{ end }}
                     
-                                <!-- Language List -->
-                  {{- if .Site.IsMultiLingual }}
-                  <li>
-                    <select id="select-language" onchange="location = this.value;">
-                      {{ $siteLanguages := .Site.Languages}}
-                      {{ $pageLang := .Page.Lang}}
-                      {{ range .Page.AllTranslations }}
-                      {{ $translation := .}}
-                      {{ range $siteLanguages }}
-                      {{ if eq $translation.Lang .Lang }}
-                      {{ $selected := false }}
-                      {{ if eq $pageLang .Lang}}
-                      <option id="{{ $translation.Language }}" value="{{ $translation.Permalink }}" selected>
-                        {{ .LanguageName }}
-                      </option>
-                      {{ else }}
-                      <option id="{{ $translation.Language }}" value="{{ $translation.Permalink }}">{{ .LanguageName }}
-                      </option>
-                      {{ end }}
-                      {{ end }}
-                      {{ end }}
-                      {{ end }}
-                    </select>
-                  </li>
-                  {{ end }}  
+                               
                     
                 </ul>
             </div>
