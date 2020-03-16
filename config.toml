@@ -21,14 +21,14 @@ contentDir = "content/en"
 
 home = "Home"
 languageCode = "en-us"
-languageName = "En"
+languageName = "English"
 weight = 1
 [Languages.se]
 contentDir = "content/sv"
 
 home = "Hem"
 languageCode = "sv-se"
-languageName = "Sv"
+languageName = "Swedish"
 weight = 2
 
 
