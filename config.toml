@@ -1,5 +1,6 @@
 baseURL = "http://familypay.onrender.com/"
-disableLanguages = []
+#disableLanguages = []
+defaultContentLanguageInSubdir = true
 languageCode = "en-us"
 title = "Familypay"
 theme = "hugo-universal"
