@@ -24,7 +24,7 @@ languageCode = "en-us"
 languageName = "English"
 weight = 1
 [Languages.se]
-contentDir = "content/se"
+contentDir = "content/sv"
 
 home = "Hem"
 languageCode = "sv-se"
